@@ -9,7 +9,7 @@
 /*******************************************************/
 function setup() {
 	console.log("setup: ");
-	cnv = new Canvas( 320, 640);
+	cnv = new Canvas( windowWidth, windowHeight-40);
 
 }
 	
