@@ -10,7 +10,7 @@
 function setup() {
 	console.log("setup: ");
 	cnv = new Canvas( windowWidth, windowHeight-40);
-	Rect = new Sprite(windowWidth/2, windowHeight/2, windowWidth/5, windowHeight/10 );
+	Rect = new Sprite(windowWidth/2, windowHeight/2, windowWidth/5, windowHeight/10, 'd' );
 	Rect.color = "Red";
 	Rect.rotationSpeed = 25;
 	Rect.vel.x = 2;
