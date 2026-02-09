@@ -12,6 +12,7 @@ function setup() {
 	cnv = new Canvas( windowWidth, windowHeight-40);
 	Rect = new Sprite(windowWidth/2, windowHeight/2);
 	Rect.color = "190, 200, 000";
+	Circ = new Sprite(windowWidth/5, windowHeight/2);
 }
 	
 /*******************************************************/
