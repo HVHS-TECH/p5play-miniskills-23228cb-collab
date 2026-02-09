@@ -10,14 +10,15 @@
 function setup() {
 	console.log("setup: ");
 	cnv = new Canvas( windowWidth, windowHeight-40);
-	Rect = new Sprite(windowWidth/2, windowHeight/2)
+	Rect = new Sprite(windowWidth/2, windowHeight/2);
+	Rect.color = "255, 000, 000";
 }
 	
 /*******************************************************/
 // draw()
 /*******************************************************/
 function draw() {
-	background("255,0,0");
+	background("255, 0, 0");
 }
 
 /*******************************************************/
