@@ -10,9 +10,9 @@
 function setup() {
 	console.log("setup: ");
 	cnv = new Canvas( windowWidth, windowHeight-40);
-	Rect = new Sprite(windowWidth/2, windowHeight/2, );
+	Rect = new Sprite(windowWidth/2, windowHeight/2, 20, 10 );
 	Rect.color = "Red";
-	Circ = new Sprite(windowWidth/5, windowHeight/2, 40, 30);
+	Circ = new Sprite(windowWidth/5, windowHeight/2, 40);
 }
 	
 /*******************************************************/
