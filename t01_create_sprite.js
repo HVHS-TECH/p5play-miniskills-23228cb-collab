@@ -10,7 +10,7 @@
 function setup() {
 	console.log("setup: ");
 	cnv = new Canvas( windowWidth, windowHeight-40);
-
+	Rect = new Sprite(windowWidth/2, windowHeight/2)
 }
 	
 /*******************************************************/
