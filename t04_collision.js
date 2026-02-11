@@ -14,8 +14,9 @@ function setup() {
 	Rect.color = "Red";
 	Rect.rotationSpeed = -5;
 	Rect.vel.x = 2;
+	Rect.bounciness =1.5;
 	world.gravity.y = 10;
-	platform_1 = new Sprite(windowWidth/2, 700, 90, 10, 'k');
+	platform_1 = new Sprite(windowWidth/2, 700, windowWidth, 10, 'k');
 }
 	
 /*******************************************************/
