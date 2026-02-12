@@ -9,13 +9,14 @@
 /*******************************************************/
 function setup() {
 	console.log("setup: ");
-	alienGroup.collides(ball_1, func2Call);
-	Rect = new Sprite(windowWidth/2, windowHeight/2, windowWidth/12, 'd' );
-	Rect.color = "Red";
-	Rect.rotationSpeed = -5;
-	Rect.vel.x = 2;
-	Rect.bounciness =1.5;
-	Rect.drag =0.5;
+	cnv = new Canvas( windowWidth, windowHeight-40);
+	Circle = new Sprite(windowWidth/2, windowHeight/2, windowWidth/12, 'd' );
+	
+	Circle.color = "Red";
+	Circle.rotationSpeed = -5;
+	Circle.vel.x = 2;
+	Circle.bounciness =1.5;
+	Circle.drag =0.5;
 	world.gravity.y = 10;
 	wallLH  = new Sprite(0, windowHeight/2, 8, windowHeight, 'k');
 	wallLH.color = 'black';
@@ -24,6 +25,7 @@ function setup() {
 	wallBot = new Sprite(windowWidth/2, windowHeight, windowWidth, 8, 'k');
 	// Create a group for the aliens
 	alienGroup = new Group();
+	Circle .collides(alienGroup, func2Call);
 
 	for (i = 0; i < 5; i++) {
   alien = new Sprite(windowWidth/4, windowHeight/2, windowWidth/12, windowHeight/15);
@@ -43,7 +45,7 @@ function draw() {
 	background("white");
 }
 
-function func2Call(_ball_1, _ssss) {
+function func2Call(_Circle, _ssss) {
 
 // Delete the alien which was hit
 

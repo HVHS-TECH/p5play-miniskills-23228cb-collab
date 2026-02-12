@@ -9,18 +9,37 @@
 /*******************************************************/
 function setup() {
 	console.log("setup: ");
-	cnv = new Canvas( windowWidth, windowHeight-40);
-	Rect = new Sprite(windowWidth/2, windowHeight/2, 20, 10 );
-	Rect.color = "Red";
-	Circ = new Sprite(windowWidth/5, windowHeight/2, 40);
-	Circ.color = "Blue"
+	// Now the width and height of the canvas keep changing
+	width = random(300,600);
+	height = random(300,600);
+
+	// and the sprites keep changing too!
+	spriteX= random(50,150);
+	spriteY=  random(50,150);  ;
+
+	cnv = new Canvas(width, height);
+	
+	red = new Sprite(spriteX/2, spriteY/2, spriteX, spriteY);
+	red.color = 'red';
+
+	green = new Sprite( width-spriteX/2,spriteY/2, spriteX, spriteY);
+	green.color = 'green';
+
+	blue = new Sprite( width-spriteX/2, height-spriteY/2 ,  spriteX, spriteY);
+	blue.color = 'blue';
+
+	yellow = new Sprite( spriteX/2,  height-spriteY/2,  spriteX, spriteY);
+	yellow.color = 'yellow';
+
+	purple = new Sprite( width/2, height/2 ,  spriteX, spriteY);
+	purple.color = 'purple';
 }
 	
 /*******************************************************/
 // draw()
 /*******************************************************/
 function draw() {
-	background("white");
+	background("cyan");
 }
 
 /*******************************************************/
